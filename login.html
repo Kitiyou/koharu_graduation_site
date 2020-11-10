@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>hello</title>
+        <script type="text/javascript" src="js/global.js"></script>
+        <script type="text/javascript" src="js/login.js"></script>
+        <title>TODO: タイトル</title>
     </head>
     <body>
-        <h1>Hello, World!!!!!</h1>
+        <form action="index.html" onsubmit="return loginSubmit()" method="GET">
+            <input type="password" id="password" placeholder="パスワード">
+            <input type="submit" value="Log in">
+        </form>
     </body>
 </html>
