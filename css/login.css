@@ -1,0 +1,59 @@
+html, body {
+    height: 100%;
+}
+body {
+    background-image: linear-gradient(#bf82a5, #5b50a9);
+}
+.login_area {
+    position: fixed;
+    width: 100%;
+    max-width: 400px;
+    top: 50%;
+    left: 50%;
+    /* background: red; */
+    transform: translate(-50%, -50%);
+}
+.login_form {
+    text-align: center;
+    padding: 10px;
+}
+.login_form input[type="password"] {
+    width: 50%;
+    margin: 8px auto;
+    background: none;
+    /* display: block; */
+    /* text-align: center; */
+    border: 2px solid white;
+    padding: 12px;
+    outline: none;
+    color: white;
+    border-radius: 40px;
+    transition: 0.25s;
+}
+.login_form input[type="submit"] {
+    width: 80px;
+    margin: 8px auto;
+    background: none;
+    /* display: block; */
+    /* text-align: center; */
+    border: 2px solid white;
+    padding: 12px;
+    /* outline: none; */
+    color: white;
+    border-radius: 40px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: white;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: white;
+}
