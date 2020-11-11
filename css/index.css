@@ -3,6 +3,40 @@ body {
     min-width: 300px;
     margin: 0 auto;
 }
-.event_list div img{
-    min-width: 20%;
+
+.event_year {
+    padding: 12px 0;
+    font-size: 48px;
+    text-align: center;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+}
+
+.event_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.event_list li {
+    margin: 8px;
+    display: flex;
+    align-items: center;
+}
+.event_list li:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.event_list li * {
+    margin: 0 4px;
+}
+.event_list li div {
+    flex-grow: 1;
+}
+.event_date {
+    font-size: 14px;
+}
+.event_title {
+    font-size: 18px;
+}
+.event_info {
+    font-size: 14px;
 }
