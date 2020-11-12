@@ -1,7 +1,6 @@
 var modal = document.getElementsByClassName("modal")[0];
 var modalImg = document.getElementsByClassName("modal-img")[0];
 var modalTitle = document.getElementsByClassName("modal-title")[0];
-var modalClose = document.getElementsByClassName("modal-close")[0];
 var eventList = document.getElementsByClassName("event-list");
 
 function closeModal() {
@@ -15,7 +14,10 @@ function openModal(title, src) {
     }
 }
 
+var modalClose = document.getElementsByClassName("modal-close")[0];
+var modalImgBox = document.getElementsByClassName("modal-img-box")[0];
 modalClose.onclick = closeModal;
+modalImgBox.onclick = closeModal;
 
 for (var i = 0; i < eventList.length; i++) {
     var children = eventList[i].children;
