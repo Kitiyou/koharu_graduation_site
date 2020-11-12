@@ -4,7 +4,7 @@ html, body {
 body {
     background-image: linear-gradient(#bf82a5, #5b50a9);
 }
-.login_area {
+.login-area {
     position: fixed;
     width: 100%;
     max-width: 400px;
@@ -13,11 +13,11 @@ body {
     /* background: red; */
     transform: translate(-50%, -50%);
 }
-.login_form {
+.login-form {
     text-align: center;
     padding: 10px;
 }
-.login_form input[type="password"] {
+.login-form input[type="password"] {
     width: 50%;
     margin: 8px auto;
     background: none;
@@ -30,7 +30,7 @@ body {
     border-radius: 40px;
     transition: 0.25s;
 }
-.login_form input[type="submit"] {
+.login-form input[type="submit"] {
     width: 80px;
     margin: 8px auto;
     background: none;
