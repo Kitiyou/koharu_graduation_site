@@ -3,7 +3,7 @@ body {
     min-width: 300px;
     margin: 0 auto;
     /* background-image: linear-gradient(#441544, #23335e); */
-    background-image: url(../img/background.png);
+    background-image: url(../img/background.jpg);
     background-repeat: repeat-y;
     background-size: max(800px, 100%);
     background-position: center;
