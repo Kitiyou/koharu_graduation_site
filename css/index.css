@@ -2,7 +2,11 @@ body {
     max-width: 600px;
     min-width: 300px;
     margin: 0 auto;
-    background-image: linear-gradient(#441544, #23335e);
+    /* background-image: linear-gradient(#441544, #23335e); */
+    background-image: url(../img/background.png);
+    background-repeat: repeat-y;
+    background-size: max(800px, 100%);
+    background-position: center;
     color: white;
 }
 
