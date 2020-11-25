@@ -4,17 +4,44 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <script type="text/javascript" src="js/global.js"></script>
-        <script type="text/javascript" src="js/login.js"></script>
         <title>TODO: タイトル</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/login.css">
     </head>
     <body>
-        <div class="login-area">
-            <form class="login-form" action="index.html" onsubmit="return loginSubmit()" method="GET">
-                <input type="password" id="password" placeholder="パスワード">
-                <input type="submit" value="Log in">
-            </form>
+        <div class="login-area vhcenter">
+            <button class="login-btn vhcenter sansserif" onclick="loginBtnClick()">
+                <div class="top"><span>Log in</span></div>
+                <div class="bottom"><span>Log in</span></div>
+            </button>
+            <div class="input-div vhcenter invisible">
+                <svg class="input-svg vhcenter" width="260px" height="40px">
+                    <defs>
+                        <linearGradient id="rotation-gra">
+                            <stop offset="0%" stop-color="white" stop-opacity="0"></stop>
+                            <stop offset="33.33%" stop-color="white" stop-opacity="1"></stop>
+                            <stop offset="33.33%" stop-color="white" stop-opacity="0"></stop>
+                            <stop class="repeat-stop" offset="66.67%" stop-color="white" stop-opacity="0"></stop>
+                            <stop offset="66.67%" stop-color="white" stop-opacity="0"></stop>
+                            <stop offset="100%" stop-color="white" stop-opacity="1"></stop>
+                        </linearGradient>
+                    </defs>
+                    <mask id="rotation-mask">
+                        <g id="rotation-group">
+                            <rect x="0" y="0" width="780" height="20" fill="url(#rotation-gra)" />
+                        </g>
+                    </mask>
+                    <rect class="input-rect" x="1" y="1" width="258" height="38" rx="19" ry="19" fill="none" stroke="white" stroke-width="2" mask="url(#rotation-mask)" />
+                    <rect class="input-rect" x="1" y="1" width="258" height="38" rx="19" ry="19" fill="none" stroke="white" stroke-width="2" mask="url(#rotation-mask)" transform="rotate(180, 130, 20)" />
+                </svg>
+                <input class="pwd-input vhcenter" type="password" placeholder="パスワード入力" oninput="loginSubmit()">
+            </div>
+            <div class="success-div invisible">
+                <p class="text-login sansserif">Log in</p>
+                <hr>
+                <p class="text-success sansserif">SUCCESS</p>
+            </div>
         </div>
+        <script type="text/javascript" src="js/login.js"></script>
     </body>
 </html>

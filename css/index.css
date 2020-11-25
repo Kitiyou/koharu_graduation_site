@@ -7,7 +7,6 @@ body {
     background-repeat: repeat-y;
     background-size: max(800px, 100%);
     background-position: center;
-    color: white;
 }
 
 .event-year {

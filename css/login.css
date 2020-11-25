@@ -2,47 +2,150 @@ html, body {
     height: 100%;
 }
 body {
+    min-width: 300px;
     background-image: linear-gradient(#bf82a5, #5b50a9);
 }
-.login-area {
-    position: fixed;
-    width: 100%;
-    max-width: 400px;
+.vhcenter {
+    position: absolute;
     top: 50%;
     left: 50%;
-    /* background: red; */
     transform: translate(-50%, -50%);
 }
-.login-form {
+.login-area {
     text-align: center;
-    padding: 10px;
+
+    /* background: rgba(255, 0, 0, 0.3); */
 }
-.login-form input[type="password"] {
-    width: 50%;
-    margin: 8px auto;
+.login-btn {
     background: none;
-    /* display: block; */
-    /* text-align: center; */
     border: 2px solid white;
-    padding: 12px;
+    color: white;
+    font-size: 24px;
+    padding: 0;
+    width: 110px;
+    height: 50px;
+    border-radius: 100px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.login-btn div {
+    position: relative;
+    height: 20px;
+	overflow: hidden;
+}
+.login-btn .top span {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.login-btn .bottom span {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.login-btn.finish {
+    transition: 1s;
+    width: 165px;
+    height: 75px;
+    opacity: 0;
+}
+.login-btn.finish .top {
+    transition: 1s;
+    transform: translateY(-10px);
+}
+.login-btn.finish .bottom {
+    transition: 1s;
+    transform: translateY(10px);
+}
+.invisible {
+    display: none;
+}
+#rotation-mask rect {
+    animation: rotation-ani 1.5s infinite linear;
+}
+.rotation {
+    animation: rotation-ani 0.6s infinite linear;
+}
+@keyframes rotation-ani {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+/* #rotation-mask g {
+    animation: rotation 0.5s infinite linear;
+} */
+.input-div {
+    width: 260px;
+    height: 75px;
+}
+.pwd-input {
+    width: 260px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    background: none;
     outline: none;
     color: white;
-    border-radius: 40px;
-    transition: 0.25s;
+    border-radius: 100px;
+    text-align: center;
+    animation: show 2s 1s both;
 }
-.login-form input[type="submit"] {
-    width: 80px;
-    margin: 8px auto;
-    background: none;
-    /* display: block; */
-    /* text-align: center; */
-    border: 2px solid white;
-    padding: 12px;
-    /* outline: none; */
-    color: white;
-    border-radius: 40px;
-    transition: 0.25s;
-    cursor: pointer;
+.input-rect {
+    animation: show-rect 2s;
+}
+.repeat-stop {
+    animation: repeat-stop-ani 0s 1.5s both;
+}
+.input-div.finish {
+    animation: show 1.5s 1s both reverse;
+}
+.input-rect.finish {
+    transition: 1.5s 1s;
+    y: 10;
+    height: 10;
+}
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes show-rect {
+    from {
+        y: 20;
+        height: 0;
+    }
+    to {
+        y: 1;
+        height: 38px;
+    }
+}
+@keyframes repeat-stop-ani {
+    from {
+        stop-opacity: 0;
+    }
+    to {
+        stop-opacity: 1;
+    }
+}
+.text-login {
+    margin: 0;
+    font-size: 90px;
+}
+.text-success {
+    margin: 0;
+    font-size: 63px;
+}
+
+.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ::placeholder {
