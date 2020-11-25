@@ -87,11 +87,12 @@ body {
     width: 260px;
     height: 40px;
     padding: 0;
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    border: none;
     background: none;
     outline: none;
     color: white;
     border-radius: 100px;
+    font-size: 15px;
     text-align: center;
     animation: show 2s 1s both;
 }
@@ -107,7 +108,7 @@ body {
 .input-rect.finish {
     transition: 1.5s 1s;
     y: 10;
-    height: 10;
+    height: 20px;
 }
 @keyframes show {
     from {
@@ -138,10 +139,47 @@ body {
 .text-login {
     margin: 0;
     font-size: 90px;
+    white-space: nowrap;
+    animation: login-ani 2s 2s both;
+}
+.text-hr {
+    border: none;
+    margin: 0;
+    height: 2px;
+    width: 310px;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    animation: hr-ani 2s 3.5s both;
 }
 .text-success {
     margin: 0;
     font-size: 63px;
+    white-space: nowrap;
+    animation: show 2s 4s both;
+    transform: translate(-50%, 0);
+}
+@keyframes login-ani {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%);
+    }
+    40% {
+        transform: translate(-50%, -50%);
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -108%);
+    }
+}
+@keyframes hr-ani {
+    from {
+        opacity: 0;
+        width: 0;
+    }
+    to {
+        opacity: 1;
+        width: 310px;
+    }
 }
 
 .sansserif {

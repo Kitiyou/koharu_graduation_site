@@ -15,6 +15,6 @@ function loginSubmit() {
         document.getElementsByClassName("input-rect")[0].classList.add("finish");
         document.getElementsByClassName("input-rect")[1].classList.add("finish");
         document.getElementsByClassName("success-div")[0].classList.remove("invisible");
-        setTimeout(function() { window.location.href = "index.html" }, 2000)
+        setTimeout(function() { window.location.href = "index.html" }, 6000)
     }
 }
