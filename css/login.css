@@ -87,7 +87,7 @@ body {
     width: 260px;
     height: 40px;
     padding: 0;
-    border: none;
+    border: 2px solid rgba(255, 255, 255, 0.3);
     background: none;
     outline: none;
     color: white;
