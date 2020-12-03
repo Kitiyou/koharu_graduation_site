@@ -8,6 +8,18 @@ body {
     background-size: max(800px, 100%);
     background-position: center;
 }
+.header {
+    margin: 20px 6px 2px 6px;
+}
+.footer {
+    margin: 20px 6px;
+}
+.notice {
+    margin: 2px 6px;
+    text-align: end;
+    font-size: 14px;
+    color: #aaaaaa;
+}
 
 .event-year {
     padding: 12px 0;
