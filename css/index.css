@@ -6,7 +6,7 @@ body {
     background-image: url(../img/background.jpg);
     background-repeat: repeat-y;
     background-size: max(800px, 100%);
-    background-position: center;
+    background-position: center top;
 }
 .header {
     margin: 20px 6px 2px 6px;
