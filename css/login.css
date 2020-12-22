@@ -103,12 +103,12 @@ body {
     animation: repeat-stop-ani 0s 1.5s both;
 }
 .input-div.finish {
-    animation: show 1.5s 1s both reverse;
+    animation: disappear 3s 1s both;
 }
 .input-rect.finish {
     transition: 1.5s 1s;
-    y: 10;
-    height: 20px;
+    y: 19.9;
+    height: 0.1px;
 }
 @keyframes show {
     from {
@@ -116,6 +116,20 @@ body {
     }
     to {
         opacity: 1;
+    }
+}
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+    33% {
+        opacity: 0.4;
+    }
+    70% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0;
     }
 }
 @keyframes show-rect {
