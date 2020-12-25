@@ -11,13 +11,22 @@ body {
 .header {
     margin: 20px 6px 2px 6px;
 }
+.footer {
+    margin: 20px 6px;
+}
 .header p {
     margin: 4px 0;
     text-indent: 1em;
-    font-size: 24px;
+    font-size: 20px;
 }
-.footer {
-    margin: 20px 6px;
+.footer p {
+    margin: 4px 0;
+    text-indent: 1em;
+    font-size: 20px;
+}
+.footer h1 {
+    margin: 8px 0;
+    font-size: 30px;
 }
 .notice {
     margin: 2px 6px;
