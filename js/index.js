@@ -46,8 +46,7 @@ for (var i = 0; i < eventLists.length; i++) {
 var contentIndex = 0; //目前显示了多少个内容
 var waitingFlag = true;
 function liEnter(showContent) {
-    // showContent.classList.add("scrolled");
-    showContent.className+=" scrolled";
+    showContent.classList.add("scrolled");
 }
 function liCheck() { //检查滚动位置并显示
     if (!waitingFlag && contentIndex < showContents.length) {
