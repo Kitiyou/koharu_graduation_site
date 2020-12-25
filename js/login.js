@@ -10,11 +10,11 @@ function loginSubmit() {
         window.sessionStorage.setItem("khr_password", passwordInput.value);
         loginFlag = true;
 
+        setTimeout(function() { window.location.href = "index.html" }, 6000)
         document.getElementsByClassName("input-div")[0].classList.add("finish");
+        document.getElementsByClassName("success-div")[0].classList.remove("invisible");
         document.getElementsByClassName("input-rect")[0].classList.add("finish");
         document.getElementsByClassName("input-rect")[1].classList.add("finish");
-        document.getElementsByClassName("success-div")[0].classList.remove("invisible");
-        setTimeout(function() { window.location.href = "index.html" }, 6000)
         document.getElementById("rotation-group").classList.add("rotation");
     }
 }
